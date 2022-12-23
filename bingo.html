@@ -1,0 +1,324 @@
+<!DOCTYPE HTML>
+
+<html manifest="bingo.appcache>
+	<head>
+		<title>Adonia BINGO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		
+		<style>
+			a {
+				text-decoration: none;
+				color: black;
+				hight: 45px;
+			}
+			
+			.standardp {
+				width: 90px;
+				hight: 90px;
+				background-color: #ffffff;
+				border-radius: 5px;
+				border: 1px solid #555555;
+				float: left;
+				text-align: center;
+				font-size: 40px;
+				text-decoration: none;
+			}
+
+			.standard {
+				width: 90px;
+				hight: 50px;
+				background-color: #ffffff;
+				border-radius: 5px;
+				border: 1px solid #555555;
+				float: left;
+				text-align: center;
+				font-size: 45px;
+				text-decoration: none;
+			}
+
+			.button {
+				width: 90px;
+				hight: 50px;
+				background-color: #ffffff;
+				border: 1px solid #555555;
+				float: left;
+				text-align: center;
+				font-size: 30px;
+				text-decoration: none;
+			}
+			
+			.bingo {
+				background-color: #ff0000;
+				color: #ffffff;
+			}
+
+			.reihe {
+				width: 1000px;
+			}
+		</style>
+		
+		<script type="text/javascript" language="JavaScript"> 
+		
+			<!-- Begin 
+				function neueFarbe(objektID) { 
+					var farbe = document.getElementById(objektID).classList;
+					if (farbe == 'standard' ||  farbe == 'standardp' ) {
+						document.getElementById(objektID).classList.add("bingo");
+					}  else {
+						document.getElementById(objektID).classList.remove("bingo");
+					} 
+				}
+			// End --> 
+		</script>
+
+	</head>
+	<body style="background-color: black;">
+	<div id="links">
+		<div class="reihe">
+			<div id="g01" class="standardp"><a href="javascript:neueFarbe('g01')"><img src="bild1.png" /></a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="g02" class="standardp"><a href="javascript:neueFarbe('g02')"><img src="bild2.png" /></a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="g03" class="standardp"><a href="javascript:neueFarbe('g03')"><img src="bild3.png" /></a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="g04" class="standardp"><a href="javascript:neueFarbe('g04')"><img src="bild4.png" /></a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="g05" class="standardp"><a href="javascript:neueFarbe('g05')"><img src="bild5.png" /></a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="g06" class="standardp"><a href="javascript:neueFarbe('g06')"><img src="bild6.png" /></a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="g07" class="standardp"><a href="javascript:neueFarbe('g07')"><img src="bild7.png" /></a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="g08" class="standardp"><a href="javascript:neueFarbe('g08')"><img src="bild8.png" /></a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="g09" class="standardp"><a href="javascript:neueFarbe('g09')"><img src="bild9.png" /></a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="g10" class="standardp"><a href="javascript:neueFarbe('g10')"><img src="bild10.png" /></a></div>
+		</div>
+		<br /><br /><br />
+		<div class="reihe">
+			<div id="n01" class="standard"><a href="javascript:neueFarbe('n01')">01</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n02" class="standard"><a href="javascript:neueFarbe('n02')">02</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n03" class="standard"><a href="javascript:neueFarbe('n03')">03</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n04" class="standard"><a href="javascript:neueFarbe('n04')">04</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n05" class="standard"><a href="javascript:neueFarbe('n05')">05</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n06" class="standard"><a href="javascript:neueFarbe('n06')">06</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n07" class="standard"><a href="javascript:neueFarbe('n07')">07</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n08" class="standard"><a href="javascript:neueFarbe('n08')">08</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n09" class="standard"><a href="javascript:neueFarbe('n09')">09</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n10" class="standard"><a href="javascript:neueFarbe('n10')">10</a></div>
+		</div>
+		<br /><br />
+		<div class="reihe">
+			<div id="n11" class="standard"><a href="javascript:neueFarbe('n11')">11</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n12" class="standard"><a href="javascript:neueFarbe('n12')">12</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n13" class="standard"><a href="javascript:neueFarbe('n13')">13</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n14" class="standard"><a href="javascript:neueFarbe('n14')">14</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n15" class="standard"><a href="javascript:neueFarbe('n15')">15</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n16" class="standard"><a href="javascript:neueFarbe('n16')">16</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n17" class="standard"><a href="javascript:neueFarbe('n17')">17</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n18" class="standard"><a href="javascript:neueFarbe('n18')">18</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n19" class="standard"><a href="javascript:neueFarbe('n19')">19</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n20" class="standard"><a href="javascript:neueFarbe('n20')">20</a></div>
+		</div>
+		<br /><br />
+		<div class="reihe">
+			<div id="n21" class="standard"><a href="javascript:neueFarbe('n21')">21</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n22" class="standard"><a href="javascript:neueFarbe('n22')">22</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n23" class="standard"><a href="javascript:neueFarbe('n23')">23</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n24" class="standard"><a href="javascript:neueFarbe('n24')">24</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n25" class="standard"><a href="javascript:neueFarbe('n25')">25</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n26" class="standard"><a href="javascript:neueFarbe('n26')">26</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n27" class="standard"><a href="javascript:neueFarbe('n27')">27</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n28" class="standard"><a href="javascript:neueFarbe('n28')">28</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n29" class="standard"><a href="javascript:neueFarbe('n29')">29</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n30" class="standard"><a href="javascript:neueFarbe('n30')">30</a></div>
+		</div>
+		<br /><br />
+		<div class="reihe">
+			<div id="n31" class="standard"><a href="javascript:neueFarbe('n31')">31</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n32" class="standard"><a href="javascript:neueFarbe('n32')">32</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n33" class="standard"><a href="javascript:neueFarbe('n33')">33</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n34" class="standard"><a href="javascript:neueFarbe('n34')">34</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n35" class="standard"><a href="javascript:neueFarbe('n35')">35</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n36" class="standard"><a href="javascript:neueFarbe('n36')">36</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n37" class="standard"><a href="javascript:neueFarbe('n37')">37</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n38" class="standard"><a href="javascript:neueFarbe('n38')">38</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n39" class="standard"><a href="javascript:neueFarbe('n39')">39</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n40" class="standard"><a href="javascript:neueFarbe('n40')">40</a></div>
+		</div>
+		<br /><br />
+		<div class="reihe">
+			<div id="n41" class="standard"><a href="javascript:neueFarbe('n41')">41</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n42" class="standard"><a href="javascript:neueFarbe('n42')">42</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n43" class="standard"><a href="javascript:neueFarbe('n43')">43</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n44" class="standard"><a href="javascript:neueFarbe('n44')">44</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n45" class="standard"><a href="javascript:neueFarbe('n45')">45</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n46" class="standard"><a href="javascript:neueFarbe('n46')">46</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n47" class="standard"><a href="javascript:neueFarbe('n47')">47</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n48" class="standard"><a href="javascript:neueFarbe('n48')">48</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n49" class="standard"><a href="javascript:neueFarbe('n49')">49</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n50" class="standard"><a href="javascript:neueFarbe('n50')">50</a></div>
+		</div>
+		<br /><br />
+		<div class="reihe">
+			<div id="n51" class="standard"><a href="javascript:neueFarbe('n51')">51</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n52" class="standard"><a href="javascript:neueFarbe('n52')">52</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n53" class="standard"><a href="javascript:neueFarbe('n53')">53</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n54" class="standard"><a href="javascript:neueFarbe('n54')">54</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n55" class="standard"><a href="javascript:neueFarbe('n55')">55</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n56" class="standard"><a href="javascript:neueFarbe('n56')">56</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n57" class="standard"><a href="javascript:neueFarbe('n57')">57</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n58" class="standard"><a href="javascript:neueFarbe('n58')">58</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n59" class="standard"><a href="javascript:neueFarbe('n59')">59</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n60" class="standard"><a href="javascript:neueFarbe('n60')">60</a></div>
+		</div>
+		<br /><br />
+		<div class="reihe">
+			<div id="n61" class="standard"><a href="javascript:neueFarbe('n61')">61</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n62" class="standard"><a href="javascript:neueFarbe('n62')">62</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n63" class="standard"><a href="javascript:neueFarbe('n63')">63</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n64" class="standard"><a href="javascript:neueFarbe('n64')">64</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n65" class="standard"><a href="javascript:neueFarbe('n65')">65</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n66" class="standard"><a href="javascript:neueFarbe('n66')">66</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n67" class="standard"><a href="javascript:neueFarbe('n67')">67</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n68" class="standard"><a href="javascript:neueFarbe('n68')">68</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n69" class="standard"><a href="javascript:neueFarbe('n69')">69</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n70" class="standard"><a href="javascript:neueFarbe('n70')">70</a></div>
+		</div>
+		<br /><br />
+		<div class="reihe">
+			<div id="n71" class="standard"><a href="javascript:neueFarbe('n71')">71</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n72" class="standard"><a href="javascript:neueFarbe('n72')">72</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n73" class="standard"><a href="javascript:neueFarbe('n73')">73</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n74" class="standard"><a href="javascript:neueFarbe('n74')">74</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n75" class="standard"><a href="javascript:neueFarbe('n75')">75</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n76" class="standard"><a href="javascript:neueFarbe('n76')">76</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n77" class="standard"><a href="javascript:neueFarbe('n77')">77</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n78" class="standard"><a href="javascript:neueFarbe('n78')">78</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n79" class="standard"><a href="javascript:neueFarbe('n79')">79</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n80" class="standard"><a href="javascript:neueFarbe('n80')">80</a></div>
+		</div>
+		<br /><br />
+		<div class="reihe">
+			<div id="n81" class="standard"><a href="javascript:neueFarbe('n81')">81</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n82" class="standard"><a href="javascript:neueFarbe('n82')">82</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n83" class="standard"><a href="javascript:neueFarbe('n83')">83</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n84" class="standard"><a href="javascript:neueFarbe('n84')">84</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n85" class="standard"><a href="javascript:neueFarbe('n85')">85</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n86" class="standard"><a href="javascript:neueFarbe('n86')">86</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n87" class="standard"><a href="javascript:neueFarbe('n87')">87</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n88" class="standard"><a href="javascript:neueFarbe('n88')">88</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n89" class="standard"><a href="javascript:neueFarbe('n89')">89</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n90" class="standard"><a href="javascript:neueFarbe('n90')">90</a></div>
+		</div>
+		<br /><br />
+		<div class="reihe">
+			<div id="n91" class="standard"><a href="javascript:neueFarbe('n91')">91</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n92" class="standard"><a href="javascript:neueFarbe('n92')">92</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n93" class="standard"><a href="javascript:neueFarbe('n93')">93</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n94" class="standard"><a href="javascript:neueFarbe('n94')">94</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n95" class="standard"><a href="javascript:neueFarbe('n95')">95</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n96" class="standard"><a href="javascript:neueFarbe('n96')">96</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n97" class="standard"><a href="javascript:neueFarbe('n97')">97</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n98" class="standard"><a href="javascript:neueFarbe('n98')">98</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n99" class="standard"><a href="javascript:neueFarbe('n99')">99</a></div>
+			<div style="width: 8px; float: left;">&nbsp;</div>
+			<div id="n99" style="border: 0px; background-color: black; font-size: 30px;">
+				<form>
+					<input type="submit" class="button" value="X" />
+				</form></div>
+		</div>
+	</div>	
+	</body>
+</html>
